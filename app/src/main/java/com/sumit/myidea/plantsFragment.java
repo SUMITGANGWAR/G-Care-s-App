@@ -84,19 +84,5 @@ public class plantsFragment extends Fragment {
 
         return view;
     }
-//    public void getcurrentuserprofileimage(){
-//        storageReference.child("images_profile/" + auth.getCurrentUser().getUid().toString()).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-//            @Override
-//            public void onSuccess(Uri uri) {
-//                Picasso.get().load(uri.toString()).into();
-//                pd.dismiss();
-//
-//
-//            }
-//        }).addOnFailureListener(new OnFailureListener() {
-//            @Override
-//            public void onFailure(@NonNull Exception e) {
-//                pd.dismiss();
-//            }
-//        });
+
 }
