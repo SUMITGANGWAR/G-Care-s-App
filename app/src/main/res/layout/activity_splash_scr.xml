@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/LightGreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/wateringplants"
+        android:layout_width="295dp"
+        android:layout_height="222dp"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/wateringplants">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/gcare"
+        android:layout_width="306dp"
+        android:layout_height="71dp"
+        android:layout_below="@+id/wateringplants"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/gcare">
+
+    </ImageView>
+    <ProgressBar
+        android:id="@+id/pgbarinsplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gcare"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp">
+
+    </ProgressBar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pgbarinsplash"
+        android:text="     Version 1.0.0 \n All rigths reserved"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textStyle="italic">
+
+    </TextView>
+
+</RelativeLayout>

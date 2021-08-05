@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/diseaseFragment"
+    tools:context=".diseaseFragment"
+    android:background="@color/LightGreen"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Progress Bar created-->
+        <com.kofigyan.stateprogressbar.StateProgressBar
+            android:id="@+id/your_state_progress_bar_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:spb_animateToCurrentProgressState="true"
+            app:spb_currentStateDescriptionColor="#0F9D58"
+            app:spb_currentStateNumber="one"
+            android:contentDescription="Image Uploaded"
+            app:spb_maxStateNumber="four"
+            app:spb_stateBackgroundColor="#BD1313"
+            app:spb_stateDescriptionColor="#808080"
+            app:spb_stateForegroundColor="#0F9D58"
+            app:spb_stateNumberBackgroundColor="#808080"
+            app:spb_stateNumberForegroundColor="#eeeeee" />
+        <ImageView
+
+            android:layout_width="250dp"
+            android:id="@+id/disease_image"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/your_state_progress_bar_id"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/camera_icon">
+
+        </ImageView>
+
+        <Button
+            android:id="@+id/disease_process_button"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/disease_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Upload Image">
+
+        </Button>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/disease_processed_data"
+            android:layout_below="@id/disease_process_button"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/disease_txt"
+                android:editable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF10C0C"
+                android:hint="Data will update after Process...Please Wait !!"
+                android:textStyle="bold">
+
+            </com.google.android.material.textfield.MaterialAutoCompleteTextView>
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/medicine_txt"
+                android:layout_marginTop="20dp"
+                android:editable="false"
+                android:layout_below="@+id/disease_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF10C0C"
+                android:hint="Data will update after Process...Please Wait !!"
+                android:textStyle="bold">
+
+            </com.google.android.material.textfield.MaterialAutoCompleteTextView>
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/treatement_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:layout_marginTop="20dp"
+                android:textColor="#FFF10C0C"
+                android:layout_below="@id/medicine_txt"
+                android:hint="Data will update after Process...Please Wait !!"
+                android:textStyle="bold">
+
+            </com.google.android.material.textfield.MaterialAutoCompleteTextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/treatement_txt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Powered By G Care's"
+                android:textColor="#610404"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/process_for_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/disease_process_button">
+
+            <TextView
+
+                android:padding="10dp"
+                android:id="@+id/text_process_for_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DAE37D"
+                android:justificationMode="inter_word"
+                android:text=" ** This is Plateform where you detect your plants disease,so that you can save them with in time. \n\n
+ ** For detection of disease upload fresh image of your plant.\n\n ** After processing of your plant image our expert team upload required information for save the plant"
+                android:textColor="#8331B6"
+                android:textSize="20dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/text_process_for_user"
+                android:text="Powered By G Care's"
+                android:textColor="#610404"
+                android:textSize="15dp">
+
+            </TextView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>

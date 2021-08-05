@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="5.5dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/plant_view_list_layout"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:id="@+id/list_image"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:src="@drawable/camera_icon">
+
+        </ImageView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/list_name"
+                android:padding="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plant_Name"
+                android:textSize="28sp"
+                android:textColor="@color/black">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/prize"
+                android:layout_marginTop="-7dp"
+                android:layout_below="@id/list_name"
+                android:text="Description:                   ₹ 20"
+                android:layout_marginLeft="35dp"
+                android:textSize="15sp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/LightGreen"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/profile_upper_backgrund">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageinprofile"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/camera_icon"
+            app:border_color="#590505"
+            app:border_width="3dp"/>
+
+
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imageinprofile"
+            android:id="@+id/usernameinprofile"
+            android:text="username"
+            android:textSize="30sp"
+            android:textColor="#504AC9"
+            android:layout_marginTop="-8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+
+            android:layout_below="@id/usernameinprofile"
+            android:text="email"
+            android:editable="false"
+            android:textSize="20sp"
+            android:paddingLeft="17dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#504AC9"
+            android:id="@+id/emilinprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.MaterialAutoCompleteTextView>
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:layout_below="@id/emilinprofile"
+            android:text="mobileno"
+            android:editable="false"
+            android:textSize="20sp"
+            android:paddingLeft="17dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#504AC9"
+            android:id="@+id/mobileinprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.textfield.MaterialAutoCompleteTextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mobileinprofile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:text="Powered By G Care's"
+            android:textColor="#610404"
+            android:textSize="15dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

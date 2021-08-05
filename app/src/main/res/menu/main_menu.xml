@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/MyProfile"
+            android:title="My Profile"
+            android:icon="@drawable/username_icon"
+            />
+        <item android:id="@+id/logoutmenu"
+            android:title="LOGOUT"
+            android:icon="@drawable/logout_icon"
+            />
+    </group>
+    <group android:id="@+id/Communicate">
+        <item android:title="Share"
+            android:icon="@drawable/ic_share"
+            android:id="@+id/share"/>
+        <item android:id="@+id/msg"
+            android:icon="@drawable/ic_send"
+            android:title="Send"/>
+    </group>
+
+
+</menu>
